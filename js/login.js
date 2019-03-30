@@ -4,7 +4,7 @@ $('#login-button').click(function (event) {
         $('.wrapper').addClass('form-success');
         setTimeout(function(){
             location.href="BirthdayCake.html";
-        },1);
+        },3);
 
 });
 
