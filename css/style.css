@@ -1599,11 +1599,11 @@ a:focus {
 	line-height: 1.2
 }
 
-.sidebar-widget__banner,.sidebar-widget__banner img {
-	width: 100%
+.sidebar-widget__beihai,.sidebar-widget__beihai img {
+	width:100%;
 }
 
-.sidebar-widget__banner a {
+.sidebar-widget__beihai a {
 	opacity: 1
 }
 
@@ -1954,4 +1954,11 @@ span p:last-child {
     height:50px;
     padding:10px;
     border-radius: 5px;
+}
+
+.nextpage div{
+    display:none;
+}
+.nextpage:hover div{
+    display:initial;
 }
