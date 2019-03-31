@@ -222,6 +222,7 @@ body {
 	opacity:1;
 	z-index:100;
 	animation:btn1 15s;
+    animation-delay: 0s;
 }
 
 .lk1 {
@@ -229,6 +230,8 @@ body {
 	font-family: Microsoft YaHei;
 	color:#fff;
 	transition:all 0.5s;
+    animation: happybirthdays 10s;
+    animation-delay: 0s;
 }
 .link1 {
 	width:170px;
@@ -240,12 +243,15 @@ body {
 	text-align:center;
 	background: #ee9ca7;
 	transition:all 0.8s;
+    animation: happybirthdays 10s;
+    animation-delay: 0s;
 }
 
 .bt1 {
 	position:relative;
 	top:22%;
 	vertical-align:middle;
+
 }
 
 a.lk1:hover {
