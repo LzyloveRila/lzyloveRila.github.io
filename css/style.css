@@ -1907,3 +1907,51 @@ a:focus {
 .content-overlay--active {
 	display: block
 }
+
+span.red {
+    background: #ff0000;
+}
+
+span.yg {
+    margin-left:10px;
+    background: yellowgreen;
+}
+
+span.or {
+    background: orange;
+}
+
+span.pi {
+    background: palevioletred;
+}
+
+span.pk {
+    background: #00a0e9;
+}
+
+span.mk {
+    background:#FFEFD5;
+    text-align:center;
+    display: inline-block;
+    width: 200px;
+    height:100px;
+    padding:10px;
+    border-radius: 3px;
+}
+
+span p:first-child {
+    font-size: 25px;
+}
+
+span p:last-child {
+    font-size: 14px;
+}
+
+.cdtime {
+    text-align:center;
+    display: inline-block;
+    width: 50px;
+    height:50px;
+    padding:10px;
+    border-radius: 5px;
+}

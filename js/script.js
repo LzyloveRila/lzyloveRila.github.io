@@ -56,5 +56,6 @@
       autoHover: true,
       pause: 4000,
     });
-  
+
 })(jQuery);
+

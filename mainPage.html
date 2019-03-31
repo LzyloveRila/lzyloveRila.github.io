@@ -10,8 +10,63 @@
     <link href="css/jquery.bxslider.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+
   </head>
+
   <body>
+
+  <script type="text/javascript" src="js/timecountdown.js"></script>
+  <script type="text/javascript">
+        /**
+         * time.day 和 time.dayZero 区别
+         * time.day 如果是1天 返回 1
+         * time.dayZero 如果是1天 则返回 01
+         * 除了day拥有Zero外 hour,minute,second,msec都有Zero 即小于10的，都会在前面补0
+         */
+        window.onload = function () {
+
+            <!--//获取日期-->
+            <!--var date = new Date();-->
+            <!--var year = date.getFullYear();-->
+            <!--var month = date.getMonth() + 1;-->
+            <!--if (month < 10) {-->
+                <!--month = "0" + month;-->
+            <!--}-->
+            <!--var day = date.getDate();-->
+            <!--if (day < 10) {-->
+                <!--day = "0" + day;-->
+                <!--}-->
+            <!--document.getElementById("daysWithXrd").innerHTML = year + "年" + month + "月" + day+"日";-->
+
+            xcsoft.countup('2019-02-14', function (time) {
+                //time.days=总天数
+                <!--document.getElementById("y1").innerHTML = time.year-->
+                var days = time.year * 365 + time.day;
+                document.getElementById("d1").innerHTML = days
+                document.getElementById("h1").innerHTML = time.hourZero
+                document.getElementById("i1").innerHTML = time.minuteZero
+                document.getElementById("s1").innerHTML = time.secondZero
+                document.getElementById("m1").innerHTML = time.msecZero
+            }, function (time) {
+                //倒计时结束后的操作
+            })
+            xcsoft.countdown('2019-07-10', function (time) {
+                var NextMeet = time.year * 365 + time.day + 1
+                document.getElementById("d2").innerHTML = NextMeet
+
+                document.getElementById("h2").innerHTML = time.hourZero
+                document.getElementById("i2").innerHTML = time.minuteZero
+                document.getElementById("s2").innerHTML = time.secondZero
+            })
+
+            var nes = parseInt(new Date().getTime() / 1000) + 60;
+            xcsoft.countdown(parseInt(nes) + '.3', function (time) {
+                document.getElementById("s3").innerHTML = time.secondZero
+            }
+            )
+
+        }
+    </script>
 
 
   <svg class="display-none">
@@ -242,7 +297,7 @@
               </div>
             </div>
             <div class="blog-post__image">
-              <a href="single-post.html"><img src="img/img0.jpg" alt="Why Glass Had Been So Popular Till Now?"></a>
+              <a href="#"><img src="img/img0.jpg" alt="Why Glass Had Been So Popular Till Now?"></a>
             </div>
             <div class="blog-post-wrapper">
               <div class="blog-post__content">
@@ -445,49 +500,49 @@
             </ul>
           </nav>
         </div>
+
+        <!--侧边狂内容设计-->
         <div class="col-md-3  sidebar  sidebar--right">
           <div class="sidebar-widget">
-            <h3>About Me</h3>
+            <h3>在一起已经</h3><hr>
             <div class="sidebar-widget__about-me">
-              <div class="sidebar-widget__about-me-image">
-                <img src="img/about-me.jpg" alt="About Me">
-              </div>
-              <p>Duis pretium convallis odio non varius. Nulla quis lorem metus.</p>
-              <span class="sidebar-widget__about-me-link">
-                <a href="about.html">Read More</a>
+              <div>
+                <div>
+                <!--<span class="red cdtime">-->
+                    <!--<p id="y1"></p>-->
+                    <!--<p>年</p>-->
+                <!--</span>-->
+                <span class="yg cdtime">
+                    <p id="d1"></p>
+                    <p>天</p>
+                </span>
+                <span class="or cdtime">
+                    <p id="h1"></p>
+                    <p>时</p>
+                </span>
+                <span class="pi cdtime">
+                    <p id="i1"></p>
+                    <p>分</p>
+                </span>
+                  <span class="pk cdtime">
+                    <p id="s1"></p>
+                    <p>秒</p>
               </span>
+                </div>
+              </div>
+
             </div>
           </div>
           <div class="sidebar-widget">
-            <h3>Follow Me</h3>
-            <div class="sidebar-widget__follow-me">
-              <div class="sidebar-widget__follow-me-icons">
-                <a href="#">
-                  <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-google"></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pinterest"></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg>
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
-                  </svg>
-                </a>
-              </div>
+            <div>
+              <p>From 2019年02月14日</p><hr>
+            </div>
+            <h3>Next Meet</h3>
+            <div style="text-align:center">
+              <span class="mk">
+                  <p id="d2"></p>
+                  <p>天</p>
+              </span>
             </div>
           </div>
           <div class="sidebar-widget">
