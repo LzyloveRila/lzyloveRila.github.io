@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eda673fa-aa7e-4eba-b2ca-d29bdee2dd12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answerToMiss.html" beforeDir="false" afterPath="$PROJECT_DIR$/answerToMiss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/birthday-cake.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/birthday-cake.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_stories.html" beforeDir="false" afterPath="$PROJECT_DIR$/our_stories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wish-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/wish-list.html" afterDir="false" />
-    </list>
+    <list default="true" id="eda673fa-aa7e-4eba-b2ca-d29bdee2dd12" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,10 +61,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
+            <state relative-caret-position="4153">
               <caret line="774" column="32" selection-start-line="774" selection-start-column="32" selection-end-line="774" selection-end-column="32" />
               <folding>
                 <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
@@ -83,44 +76,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wish-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="226" column="26" selection-start-line="226" selection-start-column="26" selection-end-line="226" selection-end-column="26" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/answerToMiss.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="208" column="36" selection-start-line="208" selection-start-column="36" selection-end-line="208" selection-end-column="36" />
-              <folding>
-                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2098">
-              <caret line="1602" column="15" selection-start-line="1602" selection-start-column="15" selection-end-line="1602" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/our_stories.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="5476">
               <caret line="499" column="36" selection-start-line="499" selection-start-column="36" selection-end-line="499" selection-end-column="36" />
               <folding>
                 <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" />
@@ -522,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2098">
-          <caret line="1602" column="15" selection-start-line="1602" selection-start-column="15" selection-end-line="1602" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/music.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -536,26 +487,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainPage.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="774" column="32" selection-start-line="774" selection-start-column="32" selection-end-line="774" selection-end-column="32" />
-          <folding>
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wish-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="226" column="26" selection-start-line="226" selection-start-column="26" selection-end-line="226" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="2098">
+          <caret line="1602" column="15" selection-start-line="1602" selection-start-column="15" selection-end-line="1602" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -570,12 +505,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wish-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1430">
+          <caret line="226" column="26" selection-start-line="226" selection-start-column="26" selection-end-line="226" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/our_stories.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="5476">
           <caret line="499" column="36" selection-start-line="499" selection-start-column="36" selection-end-line="499" selection-end-column="36" />
           <folding>
             <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4153">
+          <caret line="774" column="32" selection-start-line="774" selection-start-column="32" selection-end-line="774" selection-end-column="32" />
+          <folding>
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
