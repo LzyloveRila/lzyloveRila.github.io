@@ -230,7 +230,7 @@ body {
 	font-family: Microsoft YaHei;
 	color:#fff;
 	transition:all 0.5s;
-    animation: happybirthdays 10s;
+    animation: happybirthdays 15s;
     animation-delay: 0s;
 }
 .link1 {
@@ -243,7 +243,7 @@ body {
 	text-align:center;
 	background: #ee9ca7;
 	transition:all 0.8s;
-    animation: happybirthdays 10s;
+    animation: happybirthdays 15s;
     animation-delay: 0s;
 }
 
