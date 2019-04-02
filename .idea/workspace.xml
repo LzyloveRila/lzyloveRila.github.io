@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eda673fa-aa7e-4eba-b2ca-d29bdee2dd12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Journey.html" beforeDir="false" afterPath="$PROJECT_DIR$/Journey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answerToMiss.html" beforeDir="false" afterPath="$PROJECT_DIR$/answerToMiss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_stories.html" beforeDir="false" afterPath="$PROJECT_DIR$/our_stories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-hard.html" beforeDir="false" afterPath="$PROJECT_DIR$/study-hard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wish-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/wish-list.html" afterDir="false" />
-    </list>
+    <list default="true" id="eda673fa-aa7e-4eba-b2ca-d29bdee2dd12" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +13,7 @@
     <session id="-437812141">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="2" />
