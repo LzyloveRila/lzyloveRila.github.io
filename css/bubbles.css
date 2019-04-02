@@ -12,7 +12,7 @@
   display: block;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.5);
   bottom: -160px;
   -webkit-animation: square 30s infinite;
   animation: square 30s infinite;
