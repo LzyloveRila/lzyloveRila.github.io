@@ -1,0 +1,761 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Westa. Category Grid</title>
+    <link rel="shortcut icon" href="../static/img/r.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/jquery.bxslider.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg class="display-none">
+      <symbol viewBox="0 0 512 512" id="icon-search">
+        <path d="M448.3,424.7L335,311.3c20.8-26,33.3-59.1,33.3-95.1c0-84.1-68.1-152.2-152-152.2c-84,0-152,68.2-152,152.2
+	s68.1,152.2,152,152.2c36.2,0,69.4-12.7,95.5-33.8L425,448L448.3,424.7z M120.1,312.6c-25.7-25.7-39.8-59.9-39.8-96.3
+	s14.2-70.6,39.8-96.3S180,80,216.3,80c36.3,0,70.5,14.2,96.2,39.9s39.8,59.9,39.8,96.3s-14.2,70.6-39.8,96.3
+	c-25.7,25.7-59.9,39.9-96.2,39.9C180,352.5,145.8,338.3,120.1,312.6z"/>
+      </symbol>
+      <symbol viewBox="0 0 512 512" id="icon-close">
+        <polygon class="st0" points="340.2,160 255.8,244.3 171.8,160.4 160,172.2 244,256 160,339.9 171.8,351.6 255.8,267.8 340.2,352 
+	352,340.3 267.6,256 352,171.8 "/>
+      </symbol>
+
+      <symbol viewBox="0 0 512 512" id="icon-toggle">
+        <g>
+          <rect x="96" y="241" width="320" height="32"/>
+          <rect x="96" y="145" width="320" height="32"/>
+          <rect x="96" y="337" width="320" height="32"/>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 512 512" id="icon-arrow-right">
+        <rect x="0" y="0" width="512" height="512" fill="#ffffff"/>
+        <polygon points="160,115.4 180.7,96 352,256 180.7,416 160,396.7 310.5,256 "/>
+      </symbol>
+      <symbol viewBox="0 0 512 512" id="icon-arrow-left">
+        <rect x="0" y="0" width="512" height="512" fill="#ffffff"/>
+        <polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 "/>
+      </symbol>
+    </svg>
+
+    <header class="header  container">
+      <div class="row  header__logo">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6  logo">
+          <h1><a class="logo__link" href="index.html">Happy Birthday!</a></h1>
+          <div class="logo__description">from lizhengyang</div>
+        </div>
+        <div class="col-md-3  header__right">
+          <div class="top-icons">
+            <div class="top-icons__search">
+              <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--顶部导航栏-->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item  nav__item--active">
+            <a href="mainPage.html">HOME</a>
+            <!--主页导航下拉菜单，调整页面试图模式-->
+            <!--<ul class="nav__list-submenu">-->
+            <!--<li class="nav__item-submenu">-->
+            <!--<a href="index-fullwidth.html">Home Fullwidth</a>-->
+            <!--</li>-->
+            <!--<li class="nav__item-submenu">-->
+            <!--<a href="index-grid.html">Home Grid</a>-->
+            <!--<ul class="nav__list-submenu">-->
+            <!--<li class="nav__item-submenu">-->
+            <!--<a href="index-grid-fullwidth.html">Home Grid Fullwidth</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--<li class="nav__item-submenu">-->
+            <!--<a href="index-list.html">Home List</a>-->
+            <!--<ul class="nav__list-submenu">-->
+            <!--<li class="nav__item-submenu">-->
+            <!--<a href="index-list-fullwidth.html">Home List Fullwidth</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--<li class="nav__item-submenu">-->
+            <!--<a href="404.html">404 Page</a>-->
+            <!--</li>-->
+            <!--<li class="nav__item-submenu">-->
+            <!--<a href="single-post.html">Single Post</a>-->
+            <!--<ul class="nav__list-submenu">-->
+            <!--<li class="nav__item-submenu">-->
+            <!--<a href="single-post-fullwidth.html">Single Post Fullwidth</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--</ul>-->
+          </li>
+          <li class="nav__item">
+            <a href="category.html">Our Stories</a>
+            <ul class="nav__list-submenu">
+              <li class="nav__item-submenu">
+                <a href="category-fullwidth.html">Category Fullwidth</a>
+              </li>
+              <li class="nav__item-submenu">
+                <a href="category-grid.html">Category Grid</a>
+                <ul class="nav__list-submenu">
+                  <li class="nav__item-submenu">
+                    <a href="category-grid-fullwidth.html">Category Grid Fullwidth</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item-submenu">
+                <a href="category-list.html">Category List</a>
+                <ul class="nav__list-submenu">
+                  <li class="nav__item-submenu">
+                    <a href="category-list-fullwidth.html">Category List Fullwidth</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="category.html">Journey</a>
+          </li>
+          <li class="nav__item">
+            <a href="category.html">Study hard</a>
+          </li>
+          <li class="nav__item">
+            <a href="wish-list.html">Wish List</a>
+          </li>
+          <!--<li class="nav__item">-->
+          <!--<a href="contact.html">Contact</a>-->
+          <!--</li>-->
+        </ul>
+      </nav>
+      <div class="nav-toggle">
+        <svg class="nav-toggle__icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toggle"></use>
+        </svg>
+      </div>
+    </header>
+    <section class="container  top-slider">
+      <div class="col-md-12">
+        <div class="bxslider">
+          <div>
+            <div class="featured-image" style="background-image:url(img/img1.jpg);">
+              <div class="featured-image__bg"></div>
+              <div class="featured-image__content">
+                <span class="featured-image__content-category">
+                  <a href="#">Lifestyle</a>
+                </span>
+                <span class="featured-image__content-title">
+                  <a href="single-post.html">Fall In Love With Cat</a>
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper.</p>
+                <span class="featured-image__content-link">
+                  <a href="single-post.html">Read More</a>
+                </span>
+              </div>  
+            </div>
+          </div>
+          <div>
+            <div class="featured-image" style="background-image:url(img/img2.jpg);">
+              <div class="featured-image__bg"></div>
+              <div class="featured-image__content">
+                <span class="featured-image__content-category">
+                  <a href="#">Journey</a>
+                </span>
+                <span class="featured-image__content-title">
+                  <a href="single-post.html">All You Need To Know About Forest</a>
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper.</p>
+                <span class="featured-image__content-link">
+                  <a href="single-post.html">Read More</a>
+                </span>
+              </div> 
+            </div>
+          </div>
+          <div>
+            <div class="featured-image" style="background-image:url(img/img3.jpg);">
+              <div class="featured-image__bg"></div>
+              <div class="featured-image__content">
+                <span class="featured-image__content-category">
+                  <a href="#">Lifestyle</a>
+                </span>
+                <span class="featured-image__content-title">
+                  <a href="single-post.html">Skills That You Can Learn From Book</a>
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper.</p>
+                <span class="featured-image__content-link">
+                  <a href="single-post.html">Read More</a>
+                </span>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="container">
+        <div class="col-md-9  container--grid">
+          <div class="row">
+            <div class="category-title">
+              <h1>Lifestyle</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6  col-md-6  blog-post  blog-post--grid">
+              <div class="blog-post-wrapper">
+                <div class="blog-post__info  blog-post__info--top">
+                  <span><a href="#">Inspiration</a></span>
+                </div>
+                <div class="blog-post__title">
+                  <h2><a href="single-post.html">Why Glass Had Been So Popular Till Now?</a></h2>
+                </div>
+                <div class="blog-post__info">
+                  <span>By <a href="#">Westa</a></span>
+                  <span>November 16, 2018</span>
+                  <span><a href="#">1 Comments</a></span>
+                </div>
+              </div>
+              <div class="blog-post__image">
+                <a href="single-post.html"><img src="../static/img/img0.jpg" alt="Why Glass Had Been So Popular Till Now?"></a>
+              </div>
+              <div class="blog-post-wrapper">
+                <div class="blog-post__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper. Duis pretium convallis odio non varius.</p>
+                </div>
+                <div class="blog-post__footer">
+                  <a class="blog-post__footer-link" href="single-post.html">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6  col-md-6  blog-post  blog-post--grid">
+              <div class="blog-post-wrapper">
+                <div class="blog-post__info  blog-post__info--top">
+                  <span><a href="#">Journey</a></span>
+                </div>
+                <div class="blog-post__title">
+                  <h2><a href="single-post.html">All You Need To Know About Forest</a></h2>
+                </div>
+                <div class="blog-post__info">
+                  <span>By <a href="#">Westa</a></span>
+                  <span>November 10, 2018</span>
+                  <span><a href="#">0 Comments</a></span>
+                </div>
+              </div>
+              <div class="blog-post__image">
+                <a href="single-post.html"><img src="../static/img/img2.jpg" alt="All You Need To Know About Forest"></a>
+              </div>
+              <div class="blog-post-wrapper">
+                <div class="blog-post__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper. Duis pretium convallis odio non varius.</p>
+                </div>
+                <div class="blog-post__footer">
+                  <a class="blog-post__footer-link" href="single-post.html">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6  col-md-6  blog-post  blog-post--grid">
+              <div class="blog-post-wrapper">
+                <div class="blog-post__info  blog-post__info--top">
+                  <span><a href="#">Lifestyle</a></span>
+                </div>
+                <div class="blog-post__title">
+                  <h2><a href="single-post.html">Fall In Love With Cat</a></h2>
+                </div>
+                <div class="blog-post__info">
+                  <span>By <a href="#">Westa</a></span>
+                  <span>November 14, 2018</span>
+                  <span><a href="#">3 Comments</a></span>
+                </div>
+              </div>
+              <div class="blog-post__image">
+                <a href="single-post.html"><img src="../static/img/img1.jpg" alt="Fall In Love With Cat"></a>
+              </div>
+              <div class="blog-post-wrapper">
+                <div class="blog-post__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper. Duis pretium convallis odio non varius.</p>
+                </div>
+                <div class="blog-post__footer">
+                  <a class="blog-post__footer-link" href="single-post.html">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6  col-md-6  blog-post  blog-post--grid">
+              <div class="blog-post-wrapper">
+                <div class="blog-post__info  blog-post__info--top">
+                  <span><a href="#">Lifestyle</a></span>
+                </div>
+                <div class="blog-post__title">
+                  <h2><a href="single-post.html">Skills That You Can Learn From Book</a></h2>
+                </div>
+                <div class="blog-post__info">
+                  <span>By <a href="#">Westa</a></span>
+                  <span>November 7, 2018</span>
+                  <span><a href="#">2 Comments</a></span>
+                </div>
+              </div>
+              <div class="blog-post__image">
+                <a href="single-post.html"><img src="../static/img/img3.jpg" alt="Skills That You Can Learn From Book"></a>
+              </div>
+              <div class="blog-post-wrapper">
+                <div class="blog-post__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper. Duis pretium convallis odio non varius.</p>
+                </div>
+                <div class="blog-post__footer">
+                  <a class="blog-post__footer-link" href="single-post.html">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6  col-md-6  blog-post  blog-post--grid">
+              <div class="blog-post-wrapper">
+                <div class="blog-post__info  blog-post__info--top">
+                  <span><a href="#">Inspiration</a></span>
+                </div>
+                <div class="blog-post__title">
+                  <h2><a href="single-post.html">How To Get People To Like Cafe</a></h2>
+                </div>
+                <div class="blog-post__info">
+                  <span>By <a href="#">Westa</a></span>
+                  <span>November 5, 2018</span>
+                  <span><a href="#">2 Comments</a></span>
+                </div>
+              </div>
+              <div class="blog-post__image">
+                <a href="single-post.html"><img src="../static/img/img4.jpg" alt="How To Get People To Like Cafe"></a>
+              </div>
+              <div class="blog-post-wrapper">
+                <div class="blog-post__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper. Duis pretium convallis odio non varius.</p>
+                </div>
+                <div class="blog-post__footer">
+                  <a class="blog-post__footer-link" href="single-post.html">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6  col-md-6  blog-post  blog-post--grid">
+              <div class="blog-post-wrapper">
+                <div class="blog-post__info  blog-post__info--top">
+                  <span><a href="#">Lifestyle</a></span>
+                </div>
+                <div class="blog-post__title">
+                  <h2><a href="single-post.html">The Shocking Revelation of Books</a></h2>
+                </div>
+                <div class="blog-post__info">
+                  <span>By <a href="#">Westa</a></span>
+                  <span>November 3, 2018</span>
+                  <span><a href="#">0 Comments</a></span>
+                </div>
+              </div>
+              <div class="blog-post__image">
+                <a href="single-post.html"><img src="../static/img/img5.jpg" alt="The Shocking Revelation of Books"></a>
+              </div>
+              <div class="blog-post-wrapper">
+                <div class="blog-post__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper. Duis pretium convallis odio non varius.</p>
+                </div>
+                <div class="blog-post__footer">
+                  <a class="blog-post__footer-link" href="single-post.html">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6  col-md-6  blog-post  blog-post--grid">
+              <div class="blog-post-wrapper">
+                <div class="blog-post__info  blog-post__info--top">
+                  <span><a href="#">Inspiration</a></span>
+                </div>
+                <div class="blog-post__title">
+                  <h2><a href="single-post.html">How Pen Can Ease Your Pain</a></h2>
+                </div>
+                <div class="blog-post__info">
+                  <span>By <a href="#">Westa</a></span>
+                  <span>October 27, 2018</span>
+                  <span><a href="#">2 Comments</a></span>
+                </div>
+              </div>
+              <div class="blog-post__image">
+                <a href="single-post.html"><img src="../static/img/img6.jpg" alt="How Pen Can Ease Your Pain"></a>
+              </div>
+              <div class="blog-post-wrapper">
+                <div class="blog-post__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper. Duis pretium convallis odio non varius.</p>
+                </div>
+                <div class="blog-post__footer">
+                  <a class="blog-post__footer-link" href="single-post.html">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6  col-md-6  blog-post  blog-post--grid">
+              <div class="blog-post-wrapper">
+                <div class="blog-post__info  blog-post__info--top">
+                  <span><a href="#">Lifestyle</a></span>
+                </div>
+                <div class="blog-post__title">
+                  <h2><a href="single-post.html">7 Quick Tips For Coffee</a></h2>
+                </div>
+                <div class="blog-post__info">
+                  <span>By <a href="#">Westa</a></span>
+                  <span>October 25, 2018</span>
+                  <span><a href="#">0 Comments</a></span>
+                </div>
+              </div>
+              <div class="blog-post__image">
+                <a href="single-post.html"><img src="../static/img/img7.jpg" alt="7 Quick Tips For Coffee"></a>
+              </div>
+              <div class="blog-post-wrapper">
+                <div class="blog-post__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis commodo ullamcorper. Duis pretium convallis odio non varius.</p>
+                </div>
+                <div class="blog-post__footer">
+                  <a class="blog-post__footer-link" href="single-post.html">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="blog-pagination">
+            <ul class="blog-pagination__items">
+              <li class="blog-pagination__item  blog-pagination__item--active">
+                <a>1</a>
+              </li>
+              <li class="blog-pagination__item">
+                <a href="#">2</a>
+              </li>
+              <li class="blog-pagination__item">
+                <a href="#">Next Page</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-3  sidebar  sidebar--right">
+          <div class="sidebar-widget">
+            <h3>About Me</h3>
+            <div class="sidebar-widget__about-me">
+              <div class="sidebar-widget__about-me-image">
+                <img src="../static/img/about-me.jpg" alt="About Me">
+              </div>
+              <p>Duis pretium convallis odio non varius. Nulla quis lorem metus.</p>
+              <span class="sidebar-widget__about-me-link">
+                <a href="about.html">Read More</a>
+              </span>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <h3>Follow Me</h3>
+            <div class="sidebar-widget__follow-me">
+              <div class="sidebar-widget__follow-me-icons">
+                <a href="#">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-google"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pinterest"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <div class="sidebar-widget__banner">
+              <a href="#"><img src="../static/img/banner.jpg" alt="Banner"></a>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <h3>Popular Posts</h3>
+            <div class="sidebar-widget__popular">
+              <div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  <a href="single-post.html"><img src="img/sidebar1.jpg" alt="7 Quick Tips For Coffee"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  <div class="sidebar-widget__popular-item-date">
+                    <span>November 15, 2018</span>
+                  </div>
+                  <div class="sidebar-widget__popular-item-content">
+                    <a href="single-post.html">7 Quick Tips For Coffee</a>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  <a href="single-post.html"><img src="img/sidebar2.jpg" alt="The Shocking Revelation of Books"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  <div class="sidebar-widget__popular-item-date">
+                    <span>November 11, 2018</span>
+                  </div>
+                  <div class="sidebar-widget__popular-item-content">
+                    <a href="single-post.html">The Shocking Revelation of Books</a>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  <a href="single-post.html"><img src="img/sidebar3.jpg" alt="How Pen Can Ease Your Pain"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  <div class="sidebar-widget__popular-item-date">
+                    <span>October 27, 2018</span>
+                  </div>
+                  <div class="sidebar-widget__popular-item-content">
+                    <a href="single-post.html">How Pen Can Ease Your Pain</a>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  <a href="single-post.html"><img src="img/sidebar4.jpg" alt="Why Is Guitar So Famous?"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  <div class="sidebar-widget__popular-item-date">
+                    <span>October 15, 2018</span>
+                  </div>
+                  <div class="sidebar-widget__popular-item-content">
+                    <a href="single-post.html">Why Is Guitar So Famous?</a>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  <a href="single-post.html"><img src="img/sidebar5.jpg" alt="How To Get People To Like Cafe"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  <div class="sidebar-widget__popular-item-date">
+                    <span>October 9, 2018</span>
+                  </div>
+                  <div class="sidebar-widget__popular-item-content">
+                    <a href="single-post.html">How To Get People To Like Cafe</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <h3>Tag Cloud</h3>
+            <div class="sidebar-widget__tag-cloud">
+              <a href="#">Travel</a>
+              <a href="#">Music</a>
+              <a href="#">Arts</a>
+              <a href="#">Creative</a>
+              <a href="#">Fashion</a>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <h3>Instagram</h3>
+            <div class="sidebar-widget__instagram">
+              <a href="#"><img src="img/instagram1.jpg" alt="Instagram"></a>
+              <a href="#"><img src="img/instagram2.jpg" alt="Instagram"></a>
+              <a href="#"><img src="img/instagram3.jpg" alt="Instagram"></a>
+              <a href="#"><img src="img/instagram4.jpg" alt="Instagram"></a>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <h3>Subscribe</h3>
+            <div class="sidebar-widget__subscribe">
+              <p>Follow my latest news</p>
+              <form action="index.html">
+                <input type="text" placeholder="Your email">
+                <input class="sidebar-widget__subscribe-submit" type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+          <div class="sidebar-widget">
+            <div class="sidebar-slider">
+              <div>
+                <div class="featured-image" style="background-image:url(img/img1.jpg);">
+                  <div class="featured-image__bg"></div>
+                  <div class="featured-image__content">
+                    <span class="featured-image__content-category">
+                      <a href="#">Lifestyle</a>
+                    </span>
+                    <span class="featured-image__content-title">
+                      <a href="single-post.html">Fall In Love With Cat</a>
+                    </span>
+                    <span class="featured-image__content-link">
+                      <a href="single-post.html">Read More</a>
+                    </span>
+                  </div>
+                  <a class="featured-image__overlay-link" href="single-post.html"></a>
+                </div>
+              </div>
+              <div>
+                <div class="featured-image" style="background-image:url(img/img0.jpg);">
+                  <div class="featured-image__bg"></div>
+                  <div class="featured-image__content">
+                    <span class="featured-image__content-category">
+                      <a href="#">Inspiration</a>
+                    </span>
+                    <span class="featured-image__content-title">
+                      <a href="single-post.html">Why Glass Had Been So Popular Till Now?</a>
+                    </span>
+                    <span class="featured-image__content-link">
+                      <a href="single-post.html">Read More</a>
+                    </span>
+                  </div>
+                  <a class="featured-image__overlay-link" href="single-post.html"></a>
+                </div>
+              </div>
+              <div>
+                <div class="featured-image" style="background-image:url(img/img3.jpg);">
+                  <div class="featured-image__bg"></div>
+                  <div class="featured-image__content">
+                    <span class="featured-image__content-category">
+                      <a href="#">Lifestyle</a>
+                    </span>
+                    <span class="featured-image__content-title">
+                      <a href="single-post.html">Skills That You Can Learn From Book</a>
+                    </span>
+                    <span class="featured-image__content-link">
+                      <a href="single-post.html">Read More</a>
+                    </span>
+                  </div>
+                  <a class="featured-image__overlay-link" href="single-post.html"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="container  page-footer__top">
+        <div class="col-sm-5  col-md-5">
+          <div class="page-footer__top-about">
+            <h4>LzyLoveXrd</h4>
+            <p>喜欢你就像东京塔下飘落的樱花.喜马拉雅的冰川.缠缠绵绵的明月</p>
+            <p>Date: 2019.04.02</p>
+            <p>Email: <a href="292424886@qq.com">想我了就微信震我！</a></p>
+          </div>
+        </div>
+        <div class="col-sm-3  col-md-3">
+          <h4>Categories</h4>
+          <nav class="page-footer__nav">
+            <ul class="page-footer__nav-items">
+              <li class="page-footer__nav-item">
+                <a href="category.html">Our Stories</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="category.html">Journey</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="category.html">Study hard</a>
+              </li>
+              <li class="page-footer__nav-item">
+                <a href="wish-list.html">Wish list</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-4  col-md-4">
+          <h4>Recent Posts</h4>
+          <div class="page-footer__recent-post">
+            <div class="page-footer__recent-post-info">
+              <div class="page-footer__recent-post-content">
+                <a href="single-post.html">Why Are You So beautiful,Babe?</a>
+              </div>
+              <div class="page-footer__recent-post-date">
+                <span>March 29, 2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="page-footer__recent-post">
+            <div class="page-footer__recent-post-info">
+              <div class="page-footer__recent-post-content">
+                <a href="single-post.html">Fall In Love With You</a>
+              </div>
+              <div class="page-footer__recent-post-date">
+                <span>February 14, 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container  page-footer__bottom">
+        <div class="col-sm-8  col-md-8  page-footer__bottom-copyright">
+          <p>2018 © Westa. Personal Blog Template by Feelman.</p>
+        </div>
+        <div class="col-sm-4  col-md-4  page-footer__bottom-social">
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-google"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-pinterest"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-flickr"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="search-popup">
+      <svg class="search-popup__close">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+      </svg>
+      <div class="search-popup__container  container">
+        <form action="index.html">
+          <input type="text" size="32" placeholder="Search">
+        </form>
+      </div>
+	</div>
+    <div class="content-overlay"></div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

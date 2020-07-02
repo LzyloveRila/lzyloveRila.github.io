@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<html lang="utf-8">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>致瑞迪小宝贝</title>
+	<link rel="shortcut icon" href="../static/img/r.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+	<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../static/css/jquery.bxslider.css" rel="stylesheet">
+	<link href="../static/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+	<script type="text/javascript" src="../static/js/timecountdown.js"></script>
+	<script type="text/javascript">
+        /**
+         * time.day 和 time.dayZero 区别
+         * time.day 如果是1天 返回 1
+         * time.dayZero 如果是1天 则返回 01
+         * 除了day拥有Zero外 hour,minute,second,msec都有Zero 即小于10的，都会在前面补0
+         */
+		window.onload = function () {
+
+            <!--var date = new Date();-->
+            <!--var year = date.getFullYear();-->
+            <!--var month = date.getMonth() + 1;-->
+            <!--if (month < 10) {-->
+                <!--month = "0" + month;-->
+            <!--}-->
+            <!--var day = date.getDate();-->
+            <!--if (day < 10) {
+				-->
+                <!--day = "0" + day;-->
+                <!--}-->
+            <!--document.getElementById("daysWithXrd").innerHTML = year + "年" + month + "月" + day + "日";-->
+
+				xcsoft.countup('2019-02-14', function (time) {
+                //time.days=总天数
+                <!--document.getElementById("y1").innerHTML = time.year-->
+                var days = time.year * 365 + time.day;
+					document.getElementById("d1").innerHTML = days
+					document.getElementById("h1").innerHTML = time.hourZero
+					document.getElementById("i1").innerHTML = time.minuteZero
+					document.getElementById("s1").innerHTML = time.secondZero
+					document.getElementById("m1").innerHTML = time.msecZero
+				}, function (time) {
+					//倒计时结束后的操作
+				})
+			xcsoft.countdown('2020-08-20', function (time) {
+				var NextMeet = time.year * 365 + time.day + 1
+				document.getElementById("d2").innerHTML = NextMeet
+
+				document.getElementById("h2").innerHTML = time.hourZero
+				document.getElementById("i2").innerHTML = time.minuteZero
+				document.getElementById("s2").innerHTML = time.secondZero
+			})
+
+			var nes = parseInt(new Date().getTime() / 1000) + 60;
+			xcsoft.countdown(parseInt(nes) + '.3', function (time) {
+				document.getElementById("s3").innerHTML = time.secondZero
+			}
+			)
+
+		}
+	</script>
+
+	<svg class="display-none">
+		<symbol viewBox="0 0 512 512" id="icon-search">
+			<path d="M448.3,424.7L335,311.3c20.8-26,33.3-59.1,33.3-95.1c0-84.1-68.1-152.2-152-152.2c-84,0-152,68.2-152,152.2
+			s68.1,152.2,152,152.2c36.2,0,69.4-12.7,95.5-33.8L425,448L448.3,424.7z M120.1,312.6c-25.7-25.7-39.8-59.9-39.8-96.3
+			s14.2-70.6,39.8-96.3S180,80,216.3,80c36.3,0,70.5,14.2,96.2,39.9s39.8,59.9,39.8,96.3s-14.2,70.6-39.8,96.3
+			c-25.7,25.7-59.9,39.9-96.2,39.9C180,352.5,145.8,338.3,120.1,312.6z" />
+		</symbol>
+		<symbol viewBox="0 0 512 512" id="icon-close">
+			<polygon class="st0" points="340.2,160 255.8,244.3 171.8,160.4 160,172.2 244,256 160,339.9 171.8,351.6 255.8,267.8 340.2,352 
+			352,340.3 267.6,256 352,171.8 " />
+		</symbol>
+		<symbol viewBox="0 0 512 512" id="icon-toggle">
+			<g>
+				<rect x="96" y="241" width="320" height="32" />
+				<rect x="96" y="145" width="320" height="32" />
+				<rect x="96" y="337" width="320" height="32" />
+			</g>
+		</symbol>
+		<symbol viewBox="0 0 512 512" id="icon-arrow-right">
+			<rect x="0" y="0" width="512" height="512" fill="#ffffff" />
+			<polygon points="160,115.4 180.7,96 352,256 180.7,416 160,396.7 310.5,256 " />
+		</symbol>
+		<symbol viewBox="0 0 512 512" id="icon-arrow-left">
+			<rect x="0" y="0" width="512" height="512" fill="#ffffff" />
+			<polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 " />
+		</symbol>
+	</svg>
+
+	<header class="header  container">
+		<div class="row  header__logo">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6  logo">
+				<h1><a class="logo__link" href="index.html">Happy Birthday!</a></h1>
+				<div class="logo__description">from lizhengyang</div>
+			</div>
+			<div class="col-md-3  header__right">
+				<div class="top-icons">
+					<div class="top-icons__search">
+						<svg>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--顶部导航栏-->
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item  nav__item--active"><a href="index.html">HOME</a></li>
+				<li class="nav__item"><a href="our_stories.html">Our Stories</a></li>
+				<li class="nav__item"><a href="Journey.html">Journey</a></li>
+				<li class="nav__item"><a href="study-hard.html">Study hard</a></li>
+				<li class="nav__item"><a href="wish-list.html">Wish List</a></li>
+			</ul>
+		</nav>
+		<div class="nav-toggle">
+			<svg class="nav-toggle__icon">
+				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toggle"></use>
+			</svg>
+		</div>
+	</header>
+
+	<!--滑动展示框-->
+	<section class="container  top-slider">
+		<div class="col-md-12">
+			<div class="bxslider">
+				<div>
+					<div class="featured-image" style="background-image:url(../static/img/img2.jpg);">
+						<div class="featured-image__bg"></div>
+						<div class="featured-image__content">
+							<span class="featured-image__content-category">
+								<a href="#">To my dear</a>
+							</span>
+							<span class="featured-image__content-title">
+								<a href="index.html">
+									<h2>瑞迪小可爱生日快乐！</h2>
+								</a>
+							</span>
+							<p>\u6211\u60f3\u4f60\u4e86\uff0c\u6211\u4eec\u5feb\u70b9
+								\u89c1\u9762\u5427.</p>
+							<span class="featured-image__content-link">
+								<a href="#">By LZY</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="featured-image" style="background-image:url(../static/img/img1.jpg);">
+						<div class="featured-image__bg"></div>
+						<div class="featured-image__content">
+							<span class="featured-image__content-category">
+								<a href="#">Our Stories</a>
+							</span>
+							<span class="featured-image__content-title">
+								<a href="#">Fall In Love With You</a>
+							</span>
+							<p>print('\n'.join([''.join([('LZYLoveRila'[(x-y)%8]if((x*0.05)**2+(y*0.1)**2-1)**3-(x*0.05)**2*(y*0.1)
+								**3<=0 else' ')for x in range(-30,30)])for y in range(15,-15,-1)]))</p>
+              	</div>  
+            </div>
+          	</div>
+
+          	<div>
+            <div class="featured-image" style="background-image:url(../static/img/img3.jpg);">
+              	<div class="featured-image__bg"></div>
+              	<div class="featured-image__content">
+                <span class="featured-image__content-category">
+                  	<a href="#">Journey</a>
+                </span>
+                <span class="featured-image__content-title">
+                  	<a href="#">记得我们的成都之旅吗</a>
+                </span>
+                <p>你我匆匆忙忙地逃出水泄不通的宽窄巷子，转而在临街的老巷漫游，嘻嘻哈哈地嘲笑那咖啡厅里的麻将桌.</p>
+                <span class="featured-image__content-link">
+                  	<a href="#">Read More</a>
+                </span>
+              	</div> 
+            </div>
+          	</div>
+        </div>
+      	</div>
+    </section>
+
+
+        <!--主页展示内容-->
+        <main>
+          	<div class="container">
+            <div class="col-md-9">
+              	<div class="blog-post">
+                <div class="blog-post-wrapper">
+                  	<div class="blog-post__info  blog-post__info--top">
+                    <span><a href="#">Journey</a></span>
+                  	</div>
+                  	<div class="blog-post__title">
+                    <h2><a href="index.html">滑雪初体验</a></h2>
+                  	</div>
+                  	<div class="blog-post__info">
+                    <span>By <a href="#">LZY</a></span>
+                    <span>March 31, 2019</span>
+                    <span><a href="#">Memory</a></span>
+                  	</div>
+                </div>
+                <div class="blog-post__image">
+                  	<a href="#"><img src="../static/img/img0.jpg" alt="滑雪初体验！"></a>
+                </div>
+                <div class="blog-post-wrapper">
+                  	<div class="blog-post__content">
+                    <h4>2019年2月15日【西岭雪山】</h4>
+                    <p>  一大清早，迷迷糊糊的两人便前往成都汽车站乘坐前往西岭雪山的大巴，车程大约2个多小时达到西岭雪山的缆车点，
+                      大巴司机好似因为发车延误，路途中如猛虎一般穿梭山路，一车人都在车厢内左摇右晃，好在我们自备了治疗晕车的药物才得以支撑到下车。2月份的
+                      山脚下早已是绿水青山，春意盎然，雪山在哪里呢？茸厚的云层，浓郁的雾将山峰悄悄隐藏。</p>
+                    <p>  必须乘坐缆车才能上山，缆车票一般是预先在网上购买往返票（没有步行上山的道路），直抵半山腰的滑雪场。缆车的坡度非常陡峭，速度也很快，
+                      带着我们穿梭于迷雾之中，四遭皆白，仿若穿越了时空，待到视线明朗之时，山景已有深绿茂林幻化为白茫茫雪皑皑的一片......</p>
+                  	</div>
+                  	<div class="blog-post__footer">
+                    <a class="blog-post__footer-link" href="index.html">Read more</a>
+
+                  	</div>
+                </div>
+              	</div>
+              	<div class="blog-post">
+                <div class="blog-post-wrapper">
+                  	<div class="blog-post__info  blog-post__info--top">
+                    <span><a href="#">Study hard</a></span>
+                 	 </div>
+                 	 <div class="blog-post__title">
+                    <h2><a href="index.html">Fall In Love With You</a></h2>
+                  	</div>
+                  	<div class="blog-post__info">
+                    <span>By <a href="#">LZY</a></span>
+                    <span>March 29, 2019</span>
+                    <span><a href="#">python</a></span>
+                  </div>
+                </div>
+                <div class="blog-post__image">
+                  <a href="#"><img src="../static/img/img1_blue.jpg" alt="Fall In Love With Cat"></a>
+                </div>
+                <div class="blog-post-wrapper">
+                  	<div class="blog-post__content">
+                    <p>你猜猜这个小心心是怎么来的呀？小心心里边写的又是什么呢？</p>
+                  	</div>
+                  	<div class="blog-post__footer">
+                    <a class="blog-post__footer-link" href="#">Read more</a>                 
+                  	</div>
+                </div>
+              	</div>
+              	<div class="blog-post">
+                <div class="blog-post-wrapper">
+                  	<div class="blog-post__info  blog-post__info--top">
+                    <span><a href="#">Our Stories</a></span>
+                  	</div>
+                  	<div class="blog-post__title">
+                    <h2><a href="index.html">两只小猪的故事(一）</a></h2>
+                  	</div>
+                 		<div class="blog-post__info">
+                    <span>By <a href="#">Xrd&Lzy</a></span>
+                    <span>March 27, 2019</span>
+                    <span><a href="#">3 Comments</a></span>
+                  	</div>
+                </div>
+                <div class="blog-post__image">
+                  	<a href="#"><img src="../static/img/img_story.jpg" alt="两只小猪的故事(一）"></a>
+                </div>
+                <div class="blog-post-wrapper">
+                  	<div class="blog-post__content">
+                    <p>这里有一只小猪，他在干什么?</p>
+                    <p>啊哈，他在给自己养的花花浇水呢。今天的小猪有点帅呀，穿了自己最喜欢的衣服，不过忘记穿鞋了。</p>
+                    <p>嗯？不对啊，猪猪需要穿什么鞋子，他就只有两根脚趾头。</p>
+                    <p>小猪心满意足地看着自己的花。</p>
+                    <p>这朵花是朵有名字的花，她叫小红红，小猪在山坡上野餐的时候发现了她，那是一个很美很美的山坡，漫山遍野盛开着五颜六色的鲜花，
+                      小猪找了好久，才找到没有花朵的地方，铺上蓝白相间的格子巾，摆上美味的点心，悠闲地度过了一个惬意的下午。回程的路上，他欣赏着小路旁的花朵们
+                      ，突然就看见了小红红。 这朵花比起她身旁那些妩媚艳丽的花儿们，实在是太黯淡了太柔弱了。耸拉着娇小的绿叶，垂着脑袋，一副没精打采的模样。小
+                      猪心疼地蹲下来：“晒不到阳光，也喝不够雨露，你身旁的花花们都比你高大，要我带你回家吗？我会好好照顾你。”小花左摇右摆，很开心的样子。小猪笑了，
+                      温柔地将它移到了布丁碗里边带回了家。
+                    </p>
+                    <p>小花便是那日在院子里扎下的根，被一圈青青绿草拥着，沐浴最灿烂的阳光，汲取甘甜的露珠，风儿喧嚣，小猪将她护在怀中，大雨倾盆，小猪为她支起小伞。
+                    </p>
+                    <p>自从带小红红回来也已经有半个月了，娇小的花瓣愈发鲜艳，甚至有一缕透明的光泽，唯一奇怪的是，小红红为什么从不长大呢？
+                      他小心翼翼地修剪了小红红身旁已然快追上她高度的青草，想到这一个问题他就越来越忧愁，前一刻的满足早已烟云散尽。</p>
+                  	</div>
+                  	<div class="blog-post__footer">
+                    <a class="blog-post__footer-link" href="#">Read more</a>
+                  	</div>
+                </div>
+             	</div>
+             	<div class="blog-post">
+                <div class="blog-post-wrapper">
+                  	<div class="blog-post__info  blog-post__info--top">
+                    <span><a href="#">Journey</a></span>
+                  	</div>
+                  	<div class="blog-post__title">
+                    <h2><a href="index.html">你的故乡，你的家，我魂牵梦绕的地方</a></h2>
+                 	</div>
+                  	<div class="blog-post__info">
+                    <span>By <a href="#">Lzy</a></span>
+                    <span>February 18, 2019</span>
+                    <span><a href="#">想去见你^_^</a></span>
+                  	</div>
+                </div>
+                <div class="blog-post__image">
+                  	<a href="#"><img src="../static/img/img4.jpg" alt="重庆轻轨"></a>
+                </div>
+                <div class="blog-post-wrapper">
+                  	<div class="blog-post__content">
+                    <p>山城，雾都，轻轨，魔幻8D，串串，小面，脑花，老火锅，长江 和你。</p>
+                    <p>梦想的，梦寐以求的，下一次见你，下一次去那儿找你。</p>
+                    <p>MISS YOU SO MUCH.</p>
+                  	</div>
+                  	<div class="blog-post__footer">
+                    <a class="blog-post__footer-link" href="single-post.html">Read more</a>
+                  	</div>
+                </div>
+              	</div>
+              	<nav class="blog-pagination">
+                <ul class="blog-pagination__items">
+                  	<li class="blog-pagination__item  blog-pagination__item--active">
+                    <a>1</a>
+                  	</li>
+                  	<li class="blog-pagination__item">
+                    <a href="#">2</a>
+                  	</li>
+                  	<li class="blog-pagination__item">
+                    <a class="nextpage" href="#" >Next Page
+                      	<div>暂时还没有第二页啦～等着我慢慢完善,亲亲瑞迪小宝贝</div>
+                    </a>
+                  	</li>
+                </ul>
+              	</nav>
+            </div>
+        <!--侧边框内容设计-->
+        <div class="col-md-3  sidebar  sidebar--right">
+          	<div class="sidebar-widget">
+            <h3>在一起已经</h3><hr>
+            <div class="sidebar-widget__about-me">
+              	<div>
+                <div>
+
+                  	<span class="yg cdtime">
+                      	<p id="d1"></p>
+                      	<p>天</p>
+                  	</span>
+                  	<span class="or cdtime">
+                      	<p id="h1"></p>
+                      	<p>时</p>
+                  	</span>
+                  	<span class="pi cdtime">
+                      	<p id="i1"></p>
+                      	<p>分</p>
+                  	</span>
+                  	<span class="pk cdtime">
+                      	<p id="s1"></p>
+                      	<p>秒</p>
+                  	</span>
+                </div>
+              	</div>
+
+            </div>
+          	</div>
+          	<div class="sidebar-widget">
+            <div>
+              	<p>From 2019年02月14日</p><hr>
+            </div>
+            <h3>Next Meet</h3>
+            <div style="text-align:center">
+              	<span class="mk">
+                  	<p id="d2"></p>
+                  	<p>天</p>
+              	</span>
+            </div>
+            <hr>
+          	</div>
+          	<div class="sidebar-widget">
+            <div class="sidebar-widget__beihai">
+              	<a href="#"><img src="../static/img/Beihai.jpg" alt="Beihai"></a>
+            </div>
+          	</div>
+          	<div class="sidebar-widget">
+            <h3>好好学习</h3>
+            <div class="sidebar-widget__popular">
+              	<div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  	<a href="https://docs.python.org/3/"><img src="../static/img/sidebar1.jpg" alt="python官方手册"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  	<div class="sidebar-widget__popular-item-date">
+                    <span>学习python的时候查阅这个不错</span>
+                  	</div>
+                  	<div class="sidebar-widget__popular-item-content">
+                    <a href="https://docs.python.org/3/">python官方手册</a>
+                  	</div>
+                </div>
+              	</div>
+              	<div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  	<a href="https://bbs.pinggu.org/"><img src="../static/img/sidebar2.jpg" alt="经管之家"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  	<div class="sidebar-widget__popular-item-date">
+                    <span>学经济的会计的金融的很多资料可以在这里找</span>
+                  	</div>
+                  	<div class="sidebar-widget__popular-item-content">
+                    <a href="https://bbs.pinggu.org/">人大经济论坛，经管之家</a>
+                  	</div>
+                </div>
+              	</div>
+
+              	<div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  	<a href="https://www.zhihu.com/question/30002278"><img src="../static/img/sidebar4.jpg" alt="怎样有效率地进行外文文献检索？"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  	<div class="sidebar-widget__popular-item-date">
+                    <span>可以看看，也是个人收藏</span>
+                  	</div>
+                  	<div class="sidebar-widget__popular-item-content">
+                    <a href="https://www.zhihu.com/question/30002278">怎样有效率地进行外文文献检索？</a>
+                  	</div>
+                </div>
+              	</div>
+              	<div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  	<a href="http://www.cnki.net"><img src="../static/img/sidebar5.jpg" alt="知网"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  	<div class="sidebar-widget__popular-item-date">
+                    	<span>以后你写论文经常要用的啦</span>
+                  	</div>
+                  	<div class="sidebar-widget__popular-item-content">
+                    <a href="http://www.cnki.net">中国知网</a>
+                  	</div>
+                </div>
+             	</div>
+              	<div class="sidebar-widget__popular-item">
+                <div class="sidebar-widget__popular-item-image">
+                  	<a href="https://www.zhihu.com/question/23924014"><img src="../static/img/sidebar6.jpg" alt="如何有针对地高效地阅读一篇学术论文？"></a>
+                </div>
+                <div class="sidebar-widget__popular-item-info">
+                  	<div class="sidebar-widget__popular-item-date">
+                    <span>曾经本科时候的个人收藏，看了觉得挺有用</span>
+                  	</div>
+                  	<div class="sidebar-widget__popular-item-content">
+                    <a href="https://www.zhihu.com/question/23924014">如何有针对地高效地阅读一篇学术论文？</a>
+                  	</div>
+                </div>
+              	</div>
+            </div>
+ 			</div>
+          	<div class="sidebar-widget">
+            <h3>心愿</h3>
+            <div class="sidebar-widget__tag-cloud">
+				<a href="#">Puma</a>
+				<a href="#">MAC</a>
+				<a href="#">Hotpot</a>
+				<a href="#">你不告诉</a>
+				<a href="#">我怎么知道！</a>
+            </div>
+          	</div>
+          	<div class="sidebar-widget">
+            <h3>Our Photos</h3>
+            <div class="sidebar-widget__instagram">
+				<a href="#"><img src="../static/img/instagram1.jpg" alt="Instagram"></a>
+				<a href="#"><img src="../static/img/instagram2.jpg" alt="Instagram"></a>
+				<a href="#"><img src="../static/img/instagram3.jpg" alt="Instagram"></a>
+				<a href="#"><img src="../static/img/instagram4.jpg" alt="Instagram"></a>
+            </div>
+          	</div>
+          	<div class="sidebar-widget">
+            <h3>终于终于</h3>
+            <div class="sidebar-widget__subscribe">
+              	<p>在4月2日之前赶了个雏形出来</p>
+              	<form action="answerToMiss.html">
+                <input type="text" placeholder="请回答：今天想我几次呀？">
+                <input class="sidebar-widget__subscribe-submit" type="submit" value="一百万次！">
+              	</form>
+            </div>
+          	</div>
+          	<div class="sidebar-widget">
+            <div class="sidebar-slider">
+              <div>
+                <div class="featured-image" style="background-image:url(../static/img/img1.jpg);">
+                  	<div class="featured-image__bg"></div>
+                  	<div class="featured-image__content">
+                    <span class="featured-image__content-category">
+                      	<a href="#">Study hard</a>
+                    </span>
+                    <span class="featured-image__content-title">
+                      	<a href="#">你那天去看电影穿的小裙子真漂亮</a>
+                    </span>
+                    <span class="featured-image__content-link">
+                      	<a href="#">啊我沉醉了</a>
+                    </span>
+                  	</div>
+                  	<a class="featured-image__overlay-link" href="#"></a>
+                </div>
+              	</div>
+              	<div>
+                <div class="featured-image" style="background-image:url(../static/img/img0.jpg);">
+					<div class="featured-image__bg"></div>
+					<div class="featured-image__content">
+                    <span class="featured-image__content-category">
+                      	<a href="#">Journey</a>
+                    </span>
+                    <span class="featured-image__content-title">
+                      	<a href="#">啊好想你</a>
+                    </span>
+                    <span class="featured-image__content-link">
+                      	<a href="#">写什么玩意儿都不对</a>
+                    </span>
+                  	</div>
+                  	<a class="featured-image__overlay-link" href="#"></a>
+                </div>
+              	</div>
+              	<div>
+                <div class="featured-image" style="background-image:url(../static/img/img3.jpg);">
+					<div class="featured-image__bg"></div>
+					<div class="featured-image__content">
+                    <span class="featured-image__content-category">
+                      	<a href="#">Journey</a>
+                    </span>
+                    <span class="featured-image__content-title">
+                     	<a href="#">四川成都熊猫基地</a>
+                    </span>
+                    <span class="featured-image__content-link">
+                      <!--<a href="#"></a>-->
+                    </span>
+                  	</div>
+                  	<a class="featured-image__overlay-link" href="#"></a>
+                </div>
+              	</div>
+            </div>
+          	</div>
+        </div>
+        <!--侧边框结束-->
+   	</div>
+    </main>
+
+  	<!--footer-->
+  	<footer class="page-footer">
+    <div class="container  page-footer__top">
+      	<div class="col-sm-5  col-md-5">
+        <div class="page-footer__top-about">
+			<h4>LzyLoveXrd</h4>
+			<p>喜欢你就像东京塔下飘落的樱花.喜马拉雅的冰川.缠缠绵绵的明月</p>
+			<p>Date: 2019.04.02</p>
+			<p>Email: <a href="Mailto:292424886@qq.com">想我了就微信震我！</a></p>
+        </div>
+      	</div>
+      	<div class="col-sm-3  col-md-3">
+        <h4>Categories</h4>
+        <nav class="page-footer__nav">
+          	<ul class="page-footer__nav-items">
+            <li class="page-footer__nav-item">
+              	<a href="our_stories.html">Our Stories</a>
+            </li>
+            <li class="page-footer__nav-item">
+              	<a href="Journey.html">Journey</a>
+            </li>
+            <li class="page-footer__nav-item">
+              	<a href="study-hard.html">Study hard</a>
+            </li>
+            <li class="page-footer__nav-item">
+              	<a href="wish-list.html">Wish list</a>
+            </li>
+          	</ul>
+        </nav>
+		</div>
+		<div class="col-sm-4  col-md-4">
+        <h4>Recent Posts</h4>
+        <div class="page-footer__recent-post">
+          	<div class="page-footer__recent-post-info">
+            <div class="page-footer__recent-post-content">
+              	<a href="index.html">You Are The Beauty Baby Child.</a>
+            </div>
+            <div class="page-footer__recent-post-date">
+              	<span>March 29, 2019</span>
+            </div>
+          	</div>
+        </div>
+        <div class="page-footer__recent-post">
+          	<div class="page-footer__recent-post-info">
+            <div class="page-footer__recent-post-content">
+              	<a href="index.html">Fall In Love With You</a>
+            </div>
+            <div class="page-footer__recent-post-date">
+              	<span>February 14, 2019</span>
+            </div>
+          	</div>
+        </div>
+      	</div>
+    </div>
+
+    <div class="container  page-footer__bottom">
+        <div class="col-sm-8  col-md-8  page-footer__bottom-copyright">
+          	<p>2019 © Xrd & LZY' s blog by Lizhengyang.</p>
+						</div>
+					</div>
+					</footer>
+					<div class="search-popup">
+						<svg class="search-popup__close">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+						</svg>
+						<div class="search-popup__container  container">
+							<form action="index.html">
+								<input type="text" size="32" placeholder="Search">
+							</form>
+						</div>
+					</div>
+					<div class="content-overlay"></div>
+
+					<script src="../static/js/jquery-3.1.1.min.js"></script>
+					<script src="../static/js/jquery.slicknav.min.js"></script>
+					<script src="../static/js/jquery.bxslider.min.js"></script>
+					<script src="../static/js/script.js"></script>
+
+					<!-- <audio src="music/1.mp3"  autoplay="autoplay" loop="loop"></audio> -->
+					<audio src="../static/music/3.mp3" autoplay="autoplay" loop="loop"></audio>
+					<!--<audio src="./music/1.mp3" autoplay="autoplay" loop="loop"/>-->
+
+</body>
+
+</html>
