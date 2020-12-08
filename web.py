@@ -1,8 +1,19 @@
-from flask import Flask
-from flask import request
-from flask import render_template
+#from flask_pymongo import pymongo
+import pymongo
+from flask import Flask,request,render_template
 
 app = Flask(__name__)
+
+try:
+    print("Connecting to database...")
+    client = pymongo.MongoClient(
+        "mongodb+srv://lzyrila:woaideni1996@rilawebdb.lc25k.mongodb.net/<dbname>?retryWrites=true&w=majority")
+    db = client.wish_list
+    collection = db.wish_list0
+    print("Success! connected to db")
+except Exception as e:
+    print("could not connect to db")
+    print(e)
 
 
 @app.route('/')
@@ -36,6 +47,9 @@ def our_stories():
 
 @app.route('/wish-list.html')
 def wish():
+    users = collection.find()
+    for user in users:
+        print("test.....:",user)
     return render_template("wish-list.html")
 
 # @app.route('/single-post.html')
@@ -59,4 +73,4 @@ def page_not_found(error):
     return render_template('404.html')
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=5000,debug=True)

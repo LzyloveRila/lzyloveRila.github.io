@@ -112,9 +112,15 @@
                     <caption></caption>
                     <thead></thead>
                     <tbody>
+                      <ul>
+                        <li>1</li>
+                        {% for user in users %}
+                        <li>姓名：{{ user.name }}, 年龄：{{ user.item }}, 身高：{{ user.time }}</li>
+                        {% endfor %}
+                      </ul>
                       <tr>
                         <td >
-                          <li>蔓越莓</li>
+                          <li>蔓越莓1</li>
                         </td>
                         <td>
                           <li>褪黑素</li>
@@ -220,6 +226,6 @@
     <script src="../static/js/jquery.bxslider.min.js"></script>
     <script src="../static/js/script.js"></script>
     <!-- <audio src="music/1.mp3"  autoplay="autoplay" loop="loop"></audio> -->
-    <audio src="../static/music/3.mp3" autoplay="autoplay" loop="loop"></audio>
+    <!-- <audio src="../static/music/3.mp3" autoplay="autoplay" loop="loop"></audio> -->
   </body>
 </html>
