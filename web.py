@@ -47,9 +47,9 @@ def our_stories():
 
 @app.route('/wish-list.html')
 def wish():
-    users = collection.find()
-    for user in users:
-        print("test.....:",user)
+    # users = collection.find()
+    # for user in users:
+    #     print("test.....:",user)
     return render_template("wish-list.html")
 
 # @app.route('/single-post.html')

@@ -1,4 +1,6 @@
 import pymongo
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 print("Connecting to database...")
 client = pymongo.MongoClient(
@@ -6,7 +8,7 @@ client = pymongo.MongoClient(
 db = client.wish_list
 collection = db.wish_list0
 print('success')
-users = collection.find({'name':'test'})
+users = collection.find()
 student2 = {
     'name': 'Mike',
     'item': 21,
